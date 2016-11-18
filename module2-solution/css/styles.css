@@ -1,8 +1,7 @@
 /********** Base styles **********/
 * {
     box-sizing: border-box;
-    /*margin: 0;
-    padding: 0;*/
+   
 }
 h1 {
   margin-bottom: 15px;
@@ -15,16 +14,13 @@ div.relative{
   background-color: #DCDFDF;
   width: 90%;
   height: 150px;
-  /*margin-right: auto;
   margin-left: auto;
-  margin-bottom: auto;
   margin-right: auto;
-  margin-left: auto;*/
-  margin-left: 10px;
-  margin-right: 10px;
-
+  margin-bottom: 10px;
+  margin-top: 10px;
   font-family: Helvetica;
   color: black; 
+  overflow: hidden;
 
 }
 
@@ -34,12 +30,14 @@ div.relative{
   right: 0px;
   width: 90px;
   height: 30px;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
   background-color: #FFC733;
   color: black; 
   text-align: center;
   padding-top: 5px;
   font-weight: bold;
+  margin: 0;
 }
 
 .beef {
@@ -48,12 +46,14 @@ div.relative{
   right: 0px;
   width: 90px;
   height: 30px;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
   background-color: #33FFFC;
   color: black; 
   text-align: center;
   padding-top: 5px;
   font-weight: bold;
+  margin: 0;
 }
 
 .sushi {
@@ -62,20 +62,21 @@ div.relative{
   right: 0px;
   width: 90px;
   height: 30px;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
   background-color: #A2FF33;
   color: black; 
   text-align: center;
   padding-top: 5px;
   font-weight: bold;
+  margin: 0;
 }
 
 .p2absolute {
   position: absolute;
   top: 40px;
   left: 10px;
-  padding-right: 5px;
-  padding-left: 5px;
+  padding: 10px;
 }
 
 
@@ -87,9 +88,8 @@ div.relative{
 @media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-    position: relative;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    
+    
   }
   .col-lg-1 {
     width: 8.33%;
@@ -132,9 +132,7 @@ div.relative{
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    position: relative;
-    margin-bottom: 10px;
-    margin-top: 10px;
+   
 
   }
   .col-md-1 {
@@ -173,15 +171,15 @@ div.relative{
   .col-md-12 {
     width: 100%;
   }
+  .col-md-12 > div {
+    width: 95%;
+  }
 }
 /********** Mobile **********/
 @media (max-width: 767px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
-    position: relative;
-    margin-bottom: 10px;
-  margin-top: 10px;
-
+    
   }
   .col-sm-1 {
     width: 8.33%;
